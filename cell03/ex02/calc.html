@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="frm-calc">
+      <form id="calc-form">
+        <label id="label-a" for="value-a">value 1</label>
+        <input id="input-a" type="text" name="value-a" onchange="checkNum(this)" />
+
+        <label for="opt" id="lab-opt">operation</label>
+        <select name="opt" id="sel-opt" onchange="showOpt(this)">
+          <option value="plus">+</option>
+          <option value="minus">-</option>
+          <option value="multiply">*</option>
+          <option value="divide">/</option>
+          <option value="mod">%</option>
+        </select>
+
+        <label id="label-b" for="value-b">value 2</label>
+        <input id="input-b" type="text" name="value-b" onchange="checkNum(this)" />
+
+        <input type="submit" id="btn" value="Try ME!">
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

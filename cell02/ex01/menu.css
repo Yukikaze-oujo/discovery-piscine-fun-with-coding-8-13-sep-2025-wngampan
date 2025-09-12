@@ -1,0 +1,16 @@
+html,body{
+    background-color: rgb(218, 164, 128);
+}
+h1{
+    text-align: center;
+}
+
+hr{
+    border: 5px dotted rgb(255, 255, 255);
+}
+
+.Box{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}

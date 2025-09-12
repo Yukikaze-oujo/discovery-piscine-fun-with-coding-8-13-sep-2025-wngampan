@@ -1,0 +1,40 @@
+body,html {
+    height: 100%;
+}
+
+.ParallaxPic1, .ParallaxPic2{
+  
+  height: 100vh; /*full scene*/
+  background-attachment: fixed; /*make parallax*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 5px black; 
+    
+}
+ .ParallaxPic1 {
+    background-image: url("paralaxp5.jpg");
+ }
+
+ .ParallaxPic2 {
+    background-image: url("paralaxp3r.jpg");
+}
+
+.Blackbox {
+    height: 120vh;
+    background-color: black;
+    
+}
+
+.Blackbox {
+    color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}

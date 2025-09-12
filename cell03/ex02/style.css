@@ -1,0 +1,48 @@
+* {
+  font-family: monospace;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#calc-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "lab-a lab-sign lab-b"
+    "inp-a inp-sign inp-b"
+    "cal cal cal";
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+label {
+  font-size: 24px;
+  text-align: center;
+}
+
+input, select {
+  text-align: center;
+  font-size: 28px;
+}
+
+#label-a { grid-area: lab-a; }
+#input-a { grid-area: inp-a; }
+#lab-opt { grid-area: lab-sign; }
+#sel-opt { grid-area: inp-sign; }
+#label-b { grid-area: lab-b; }
+#input-b { grid-area: inp-b; }
+
+#btn {
+  grid-area: cal;
+  font-size: 30px;
+}
+
+.frm-calc {
+  width: 800px;
+}
