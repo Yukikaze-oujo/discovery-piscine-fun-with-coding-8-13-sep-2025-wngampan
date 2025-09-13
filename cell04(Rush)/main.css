@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Audiowide", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(18, 105, 204));
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+/* navigation bar */
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.logo span {
+    color: whitesmoke;
+    text-shadow: 0 0 10px rgb(214, 0, 0);
+
+}
+
+.nav-container .links {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.nav-container .links a {
+    position: relative;
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transform: 0.3s linear;
+}
+
+.nav-container .links a::before {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(214, 0, 0);
+    transition: 0.2s linear;
+}
+
+.nav-container .links a:hover::before {
+    width: 100%;
+}
+
+.nav-container .links a:hover {
+    color: rgb(255, 255, 255);
+}
+
+section {
+    width: 100%;
+    min-height: 90vh;
+}
+
+.main-container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+.main-container .image {
+    z-index: -1;
+    width: 50%;
+}
+
+.main-container .image img {
+    width: 100%;
+    border-radius: 2%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.content h1 {
+    font-size: clamp(1rem, 2rem + 5vw, 3rem);
+}
+
+.content h1 span {
+    color: white;
+    text-shadow: 0 0 10px rgb(214, 0, 0);
+}
+
+.content .typewriter {
+    font-weight: 600;
+    font-size: clamp(1rem, 1rem + 5vw, 2rem);
+}
+
+/* Section Styles */
+.skills-container {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-container h2 {
+    font-size: 2.5rem;
+    color: rgb(18, 105, 204);
+    margin-bottom: 40px;
+}
+.skill-item img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    margin-bottom: 15px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px; 
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card h4 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+.contact-container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-container h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #444;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-link i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    width: 24px; 
+}
+
+
+.social-link:nth-child(1) i { color: #3b5998; } /* Facebook */
+.social-link:nth-child(2) i { color: #E1306C; } /* Instagram */
+.social-link:nth-child(3) i { color: #333; } /* Github */
+
+.social-link span {
+    font-weight: 500;
+}
+
+.social-link:hover {
+    color: rgb(18, 105, 204);
+}

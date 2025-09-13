@@ -1,0 +1,83 @@
+body {
+    background-color: #0f1a20;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    min-height: 100vh;
+    color: #c6c6c6;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex: 1;
+    min-width: 300px;
+}
+.left h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.left h1 span {
+    color: #1e90ff;
+}
+.left h3 span {
+    color: #1e90ff;
+    font-weight: bold;
+}
+
+.left h4 span {
+    color: rgb(255, 102, 0);
+    font-weight: bold;
+}
+
+.right {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.right img {
+    border-radius: 15px;
+    max-width: 100%;   /* ย่อได้ตามขนาด parent */
+    height: auto;      /* รักษาสัดส่วนภาพ */
+    display: block;    /* กันการเกิดช่องว่างข้างล่างรูป */
+    object-fit: cover; /* ทำให้ภาพเต็มกล่องแบบสวยงาม */
+}
+
+@media (max-width: 768px){
+    .intro {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .left h1{
+        font-size: 2.2rem;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+    .right img {
+    max-width: 80%;
+    margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px){
+    .left h1 {
+        font-size: 1.8rem;
+    }
+    .right img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+}
